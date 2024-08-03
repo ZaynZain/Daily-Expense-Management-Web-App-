@@ -1,0 +1,422 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+nav {
+    background-color:#20c997;
+    height: 6em;
+    max-height: 200px;
+    color: white;
+    padding: 1em;
+    text-align: center;
+}
+
+nav a {
+    font-weight: bold;
+    color: white;
+    margin: 0 1em;
+    text-decoration: none;
+}
+
+
+.navbar-brand {
+    display: flex;
+    align-items: center;
+    font-weight: bold;
+}
+
+.navbar-brand img {
+    height: 70px;
+    width: 70px;
+    margin-right: 10px;
+}
+
+/*index.html css section*/
+
+.jumbotron {
+
+    background-color: #f8f9fa; /* Light gray background */
+    padding: 10rem 5rem; /* Increase padding for a bigger feel */
+    margin-top: 2rem; /* Add margin at the top */
+    border-radius: 0.5rem; /* Rounded corners */
+}
+
+.jumbotron .display-4 {
+    color: #20c997;
+    font-size: 3.5rem; /* Increase heading size */
+    font-weight: 300; /* Light font weight */
+}
+
+.jumbotron .lead {
+    font-size: 1.5rem; /* Increase paragraph size */
+    font-weight: 300; /* Light font weight */
+    margin-top: 1rem; /* Add margin above the paragraph */
+}
+
+.jumbotron.text-center {
+    text-align: center; /* Center align text */
+}
+
+
+
+
+.container {
+    max-width: 800px;
+    margin: 2em auto;
+    padding: 1em;
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1, h2 {
+    font-family: Abril Fatface;
+    color: #333;
+}
+
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+form label {
+    margin-top: 1em;
+}
+
+form input, form select, form button {
+    padding: 0.5em;
+    margin-top: 0.5em;
+}
+
+form button {
+    background-color: #333;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: #555;
+}
+
+
+
+.alert {
+    padding: 1em;
+    margin-bottom: 1em;
+    border: 1px solid transparent;
+    border-radius: 4px;
+}
+
+.alert-success {
+    color: #3c763d;
+    background-color: #dff0d8;
+    border-color: #d6e9c6;
+}
+
+.alert-danger {
+    color: #a94442;
+    background-color: #f2dede;
+    border-color: #ebccd1;
+}
+
+/* Dashboard Styles */
+.dashboard-container {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 2em;
+}
+
+#icons{
+    margin-top: 2px;
+    font-size: 45px;
+    color: #20c997;
+
+}
+#add-icon{
+    font-size: 45px;
+    
+}
+
+
+.dashboard-card {
+    width: 40%;
+    padding: 40px 30px;
+    font-weight: bold;
+    text-align: center;
+
+    color: white;
+    gap: 2em;
+    text-decoration: none;
+    font-size: 1.5em;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.budget-card {
+    background-color: #20c997;
+}
+
+.expenses-card {
+    background-color: #2196F3;
+}
+
+.dashboard-card:hover {
+    text-decoration: none;
+    color: #fff;
+    border-radius: 5px;
+    transform: translateY(-15px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+
+/* Form Styles */
+.form-container {
+    max-width: 600px;
+    margin: 2em auto;
+    padding: 2em;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.form-group {
+    margin-bottom: 1.5em;
+}
+
+.form-group label {
+    display: block;
+    font-size: 1.1em;
+    margin-bottom: 0.5em;
+    color: #333;
+}
+
+.form-group input, 
+.form-group select {
+    width: 100%;
+    padding: 0.75em;
+    font-size: 1em;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.form-group input:focus, 
+.form-group select:focus {
+    border-color: #4CAF50;
+    outline: none;
+    box-shadow: 0 0 5px rgba(76, 175, 80, 0.3);
+}
+
+
+/* Form Styles */
+.form-container {
+    max-width: 600px;
+    margin: 2em auto;
+    padding: 2em;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.form-group {
+    margin-bottom: 1.5em;
+}
+
+.form-group label {
+    display: block;
+    font-size: 1.1em;
+    margin-bottom: 0.5em;
+    color: #333;
+}
+
+.form-group input, 
+.form-group select {
+    width: 100%;
+    height: 4em;
+    padding: 0.75em;
+    font-size: 1em;
+    border: 1px solid #ccc;
+    border-radius: 4xpx;
+    box-sizing: border-box;
+}
+
+.form-group input:focus, 
+.form-group select:focus {
+    border-color: #4CAF50;
+    outline: none;
+    box-shadow: 0 0 5px rgba(76, 175, 80, 0.3);
+}
+
+.submit-btn {
+    width: 100%;
+    padding: 0.75em;
+    font-size: 1.1em;
+    color: white;
+    background-color: #4CAF50;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.submit-btn:hover {
+    background-color: #45a049;
+    transform: translateY(-2px);
+}
+
+.submit-btn:active {
+    background-color: #388e3c;
+    transform: translateY(0);
+}
+
+
+/* Budget and Expenses Info */
+.budget-info {
+    margin-top: 2em;
+    text-align: center;
+}
+
+.budget-info h3 {
+    margin: 0.5em 0;
+}
+
+/* Expenses List */
+.expenses-list {
+    margin-top: 2em;
+}
+
+.expenses-list ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.expenses-list li {
+    background-color: #f9f9f9;
+    margin: 0.5em 0;
+    padding: 1em;
+    border-radius: 4px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+
+
+/*monthly report page css*/
+
+.report-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.styled-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 25px 0;
+    font-size: 18px;
+    text-align: left;
+    border-radius: 4px 4px 0 0;
+    overflow: hidden;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+}
+
+.styled-table thead tr {
+    background-color: #009879;
+    color: #ffffff;
+    text-align: left;
+    font-weight: bold;
+}
+
+.styled-table th,
+.styled-table td {
+    padding: 12px 15px;
+}
+
+.styled-table tbody tr {
+    border-bottom: 1px solid #dddddd;
+}
+
+.styled-table tbody tr:nth-of-type(even) {
+    background-color: #f3f3f3;
+}
+
+.styled-table tbody tr:last-of-type {
+    border-bottom: 2px solid #009879;
+}
+
+.styled-table tbody tr.active-row {
+    font-weight: bold;
+    color: #009879;
+}
+
+.summary {
+    margin-top: 20px;
+}
+
+.summary h2 {
+    margin: 5px 0;
+}
+
+.summary span {
+    font-weight: bold;
+    color: #009879;
+}
+
+.button-group {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+
+.btn {
+
+/*    width: 40%;*/
+     padding: 40px 30px;
+/*    padding: 2em;*/
+    text-align: center;
+/*    border-radius: 8px;*/
+    border: none;
+    border-radius: unset;
+    color: white;
+    gap: 2em;
+    text-decoration: none;
+    font-size: 1.5em;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.btn-primary {
+    background-color: #20c997;
+}
+
+.btn-secondary {
+    background-color: #2196F3;
+}
+
+.btn:hover {
+    background-color:#20c997 ;
+    border-radius: 5px;
+     transform: translateY(-15px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.btn-secondary:hover {
+     transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+
+
+
+

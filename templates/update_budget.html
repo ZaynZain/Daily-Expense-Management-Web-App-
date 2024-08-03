@@ -1,0 +1,25 @@
+
+
+
+{% extends "base.html" %}
+{% block content %}
+    <div class="container">
+        <span class="material-symbols-outlined" id="icons">sync_alt</span>
+        <h2>Update Monthly Budget</h2>
+        {% with messages = get_flashed_messages(with_categories=true) %}
+          {% if messages %}
+            <div class="flash-messages">
+              {% for category, message in messages %}
+                <div class="alert alert-{{ category }}">{{ message }}</div>
+              {% endfor %}
+            </div>
+          {% endif %}
+        {% endwith %}
+        <form method="POST" action="{{ url_for('update_budget') }}" class="form-group">
+            <label for="amount">Amount:</label>
+            <input type="number" name="amount" id="amount" placeholder="Enter Amount" value="{{ budget.amount if budget else '' }}" required>
+            <button type="submit" class="btn btn-primary">Update Budget</button>
+        </form>
+    </div>
+{% endblock %}
+

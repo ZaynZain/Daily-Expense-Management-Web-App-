@@ -1,0 +1,39 @@
+{% extends "base.html" %}
+{% block content %}
+    <div class="report-container">
+        <h1>Monthly Report for {{ current_date.strftime('%B %Y') }}</h1>
+        
+        <table class="styled-table">
+            <thead>
+                <tr>
+                    <th>Category</th>
+                    <th>Amount</th>
+                    <th>Date</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for expense in monthly_expenses %}
+                <tr>
+                    <td>{{ expense.category }}</td>
+                    <td>{{ expense.amount }}</td>
+                    <td>{{ expense.date }}</td>
+                </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+        
+        <div class="summary">
+            <h2>Total Expenses: <span>{{ total_expenses }}</span></h2>
+            <h2>Total Budget: <span>{{ total_budget }}</span></h2>
+            <h2>Remaining Balance: <span>{{ remaining_balance }}</span></h2>
+        </div>
+        
+        <div class="button-group">
+            <a href="{{ url_for('dashboard') }}" class="btn btn-primary">Back to Dashboard</a>
+            <a href="{{ url_for('download_report') }}" class="btn btn-secondary">Download CSV Report</a>
+          
+        </div>
+    </div>
+</body>
+</html>
+{% endblock %}

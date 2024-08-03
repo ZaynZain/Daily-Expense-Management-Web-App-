@@ -1,0 +1,36 @@
+{% extends "base.html" %}
+{% block content %}
+<span class="material-symbols-outlined" id="icons">home</span>
+<h2>Dashboard </h2>
+<p>Welcome, {{ current_user.username }}!</p>
+
+<div class="budget-info">
+    <h3>Monthly Budget: {{ monthly_budget.amount if monthly_budget else 'No budget set' }}</h3>
+    <h3>Total Expenses: {{ total_expenses }}</h3>
+    <h3>Remaining Budget: {{ remaining_budget }}</h3>
+</div>
+
+<div class="dashboard-container">
+    <a href="{{ url_for('add_budget') }}"     class="dashboard-card budget-card">  Add Monthly Budget  <br> <span class="material-symbols-outlined" id="add-icon">add_circle</span> </a>
+
+    <a href="{{ url_for('add_expenses') }}" class="dashboard-card expenses-card">Add Daily Expenses <br> <span class="material-symbols-outlined" id="add-icon">add_circle</span></a>
+    <a href="{{ url_for('update_budget') }}" class="dashboard-card budget-card">Update Monthly Budget <br> <span class="material-symbols-outlined" id="add-icon">update</span></a>
+
+</div>
+
+<div class="expenses-list">
+    <h3>Daily Expenses</h3>
+    <ul>
+        {% for expense in daily_expenses %}
+        <li>{{ expense.date }} - {{ expense.category }}: {{ expense.amount }}</li>
+        {% endfor %}
+    </ul>
+</div>
+
+
+
+
+
+
+
+{% endblock %}
