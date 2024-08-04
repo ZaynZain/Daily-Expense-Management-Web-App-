@@ -10,11 +10,16 @@ BudgetBuddy is a personal finance management web application that helps you mana
 - Add daily expenses
 - Generate and download monthly expense reports
 
-## Demo
+## Screenshots
 
-![BudgetBuddy Dashboard](static/images/dashboard.png)
+![BudgetBuddy Dashboard](static/screenshots/dashboard.png)
 *Dashboard view*
-
+![BudgetBuddy Dashboard](static/screenshots/starter.png)
+*Starting Page view*
+![BudgetBuddy Dashboard](static/screenshots/login.png)
+*login page view*
+![BudgetBuddy Dashboard](static/screenshots/report.png)
+*Report page view*
 ## Technologies Used
 
 - Flask (Python)
